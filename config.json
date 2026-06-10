@@ -1,0 +1,58 @@
+{
+  "materials_dir": "data/materials",
+  "output_dir": "data/output",
+  "archive_dir": "data/archive",
+  "state_file": "data/persistent_state.json",
+  "reminder_days": [30, 15, 7],
+  "field_mapping": {
+    "employee_name": ["姓名", "员工姓名", "name", "employee_name"],
+    "department": ["部门", "所属部门", "department", "dept"],
+    "cert_type": ["证照类型", "证件类型", "证书类型", "cert_type", "type"],
+    "expiry_date": ["到期日期", "有效期至", "截止日期", "expiry_date", "expire_date", "valid_until"]
+  },
+  "cert_types": {
+    "健康证": "健康证",
+    "资格证": "资格证书",
+    "劳动合同": "劳动合同",
+    "身份证": "身份证",
+    "驾驶证": "驾驶证",
+    "特种作业证": "特种作业操作证"
+  },
+  "recipients": [
+    {
+      "name": "张经理",
+      "email": "zhanghr@company.com",
+      "role": "HR经理",
+      "departments": []
+    },
+    {
+      "name": "李主管",
+      "email": "litech@company.com",
+      "role": "技术部主管",
+      "departments": ["技术部", "研发部"]
+    },
+    {
+      "name": "王主管",
+      "email": "wangops@company.com",
+      "role": "运营部主管",
+      "departments": ["运营部", "市场部"]
+    },
+    {
+      "name": "赵主管",
+      "email": "zhaoadmin@company.com",
+      "role": "行政部主管",
+      "departments": ["行政部", "财务部"]
+    }
+  ],
+  "date_formats": [
+    "%Y-%m-%d",
+    "%Y/%m/%d",
+    "%Y.%m.%d",
+    "%Y年%m月%d日",
+    "%y-%m-%d",
+    "%y/%m/%d",
+    "%m/%d/%Y",
+    "%d/%m/%Y",
+    "%Y%m%d"
+  ]
+}
